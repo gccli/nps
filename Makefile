@@ -2,10 +2,6 @@ SOURCE_FILES?=./...
 TEST_PATTERN?=.
 TEST_OPTIONS?=
 
-export PATH := ./bin:$(PATH)
-export GO111MODULE := on
-export GOPROXY := https://gocenter.io
-
 # Build a beta version of goreleaser
 build:
 	go build cmd/nps/nps.go
